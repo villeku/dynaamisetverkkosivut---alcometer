@@ -20,7 +20,7 @@ function App() {
     }
     else {
       vastaus = gramsLeft / (weight * 0.6)
-    } 
+    }
 
     if (vastaus >= 0) {
       vastaus = vastaus
@@ -81,8 +81,8 @@ function App() {
         </div>
         <div>
           <label>Gender</label>
-          <input type="radio" name="gender" value="male" defaultChecked onChange={e => setGender(e.target.value)}/><label>Male</label>
-          <input type="radio" name="gender" value="female" onChange={e => setGender(e.target.value)}/><label>Female</label>
+          <input type="radio" name="gender" value="male" defaultChecked onChange={e => setGender(e.target.value)} /><label>Male</label>
+          <input type="radio" name="gender" value="female" onChange={e => setGender(e.target.value)} /><label>Female</label>
         </div>
         <div>
           <output>{result.toFixed(1)}</output>
